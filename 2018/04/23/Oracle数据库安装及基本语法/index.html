@@ -6,19 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blog.weiyingbin.cn">
-  <title>魏迎宾的博客</title>
+  <title>Oracle数据库安装及基本语法 | 魏迎宾的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="就读于云南大学滇池学院软件工程专业，2018年7月毕业。对IT行业有着极大的兴趣，现阶段主要学习JavaEE和Android开发。业余爱好有Python，区块链，大数据，机器学习...">
+  <meta name="description" content="数据库简介基本概念数据库 : 按照数据结构来组织,存储和管理数据的仓库.这三个部分就对应了数据库发展所经理的几个阶段: 存储:  使用打孔卡片,以二进制的形式存储数据 1951雷明顿兰德 公司.推出磁带驱动器 1956IBM推出磁盘驱动器和随机存储技术.  组织:  文件系统 网状模型 层次模型 关系模型(目前的主流) 面向对象  管理: IBM于1974年推出结构化查询语句(Structured">
 <meta name="keywords" content="Java,IT,软件开发,工程师,后端开发,Android,Web前端">
-<meta property="og:type" content="website">
-<meta property="og:title" content="魏迎宾的博客">
-<meta property="og:url" content="http://blog.weiyingbin.cn/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Oracle数据库安装及基本语法">
+<meta property="og:url" content="http://blog.weiyingbin.cn/2018/04/23/Oracle数据库安装及基本语法/index.html">
 <meta property="og:site_name" content="魏迎宾的博客">
-<meta property="og:description" content="就读于云南大学滇池学院软件工程专业，2018年7月毕业。对IT行业有着极大的兴趣，现阶段主要学习JavaEE和Android开发。业余爱好有Python，区块链，大数据，机器学习...">
+<meta property="og:description" content="数据库简介基本概念数据库 : 按照数据结构来组织,存储和管理数据的仓库.这三个部分就对应了数据库发展所经理的几个阶段: 存储:  使用打孔卡片,以二进制的形式存储数据 1951雷明顿兰德 公司.推出磁带驱动器 1956IBM推出磁盘驱动器和随机存储技术.  组织:  文件系统 网状模型 层次模型 关系模型(目前的主流) 面向对象  管理: IBM于1974年推出结构化查询语句(Structured">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/a0a47eaee2a981304e835e6dae2ec0e7ba40f746/1.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/7ad3387c339cebdfcde5fe49b5ca269c292e0fa8/2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/7ad3387c339cebdfcde5fe49b5ca269c292e0fa8/3.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/7ad3387c339cebdfcde5fe49b5ca269c292e0fa8/4.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/7ad3387c339cebdfcde5fe49b5ca269c292e0fa8/5.png">
+<meta property="og:updated_time" content="2018-04-23T11:07:10.254Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="魏迎宾的博客">
-<meta name="twitter:description" content="就读于云南大学滇池学院软件工程专业，2018年7月毕业。对IT行业有着极大的兴趣，现阶段主要学习JavaEE和Android开发。业余爱好有Python，区块链，大数据，机器学习...">
+<meta name="twitter:title" content="Oracle数据库安装及基本语法">
+<meta name="twitter:description" content="数据库简介基本概念数据库 : 按照数据结构来组织,存储和管理数据的仓库.这三个部分就对应了数据库发展所经理的几个阶段: 存储:  使用打孔卡片,以二进制的形式存储数据 1951雷明顿兰德 公司.推出磁带驱动器 1956IBM推出磁盘驱动器和随机存储技术.  组织:  文件系统 网状模型 层次模型 关系模型(目前的主流) 面向对象  管理: IBM于1974年推出结构化查询语句(Structured">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/a0a47eaee2a981304e835e6dae2ec0e7ba40f746/1.png">
   
     <link rel="alternative" href="/atom.xml" title="魏迎宾的博客" type="application/atom+xml">
   
@@ -158,16 +165,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Oracle数据库安装及基本语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Oracle数据库安装及基本语法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/23/Oracle数据库安装及基本语法/">Oracle数据库安装及基本语法</a>
+    <h1 class="article-title" itemprop="name">
+      Oracle数据库安装及基本语法
     </h1>
   
 
@@ -417,6 +422,37 @@ select constraint_name, table_name from user_constraints;
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -424,16 +460,75 @@ select constraint_name, table_name from user_constraints;
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/23/Oracle数据库安装及基本语法/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://blog.weiyingbin.cn/2018/04/23/Oracle数据库安装及基本语法/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/04/23/spring学习笔记day01/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Spring学习笔记Day01</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -448,77 +543,48 @@ select constraint_name, table_name from user_constraints;
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-spring学习笔记day01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/23/spring学习笔记day01/">Spring学习笔记Day01</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/23/spring学习笔记day01/" class="archive-article-date">
-  	<time datetime="2018-04-23T08:13:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1-Spring概述"><a href="#1-Spring概述" class="headerlink" title="1.Spring概述"></a>1.Spring概述</h1><h2 id="1-1-什么是Spring？"><a href="#1-1-什么是Spring？" class="headerlink" title="1.1 什么是Spring？"></a>1.1 什么是Spring？</h2><p>Spring是一个开源框架，Spring是于2003年兴起的一个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One-J2EE Development and Design中阐述的部分理念和原型衍生而来。它是为了解决企业应用开发的复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允许使用者选择使用哪一个组件，同时为J2EE应用程序开发提供集成的框架。Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。然而，Spring的用途不仅限于服务器端的开发。从简单性、可测试性和松耦合的角度而言，任何Java应用都可以从Spring中受益。Spring的核心是控制反转（IoC）和面向切面（AOP）。简单来说，Spring是一个分层的JavaSE/EE full-stack(一站式)轻量级开源框架。</p>
-<h2 id="1-2-Spring是干什么的（有什么用）？"><a href="#1-2-Spring是干什么的（有什么用）？" class="headerlink" title="1.2 Spring是干什么的（有什么用）？"></a>1.2 Spring是干什么的（有什么用）？</h2><p>more</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/23/spring学习笔记day01/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#数据库简介"><span class="toc-number">1.</span> <span class="toc-text">数据库简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本概念"><span class="toc-number">1.1.</span> <span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一、数据库分类"><span class="toc-number">1.2.</span> <span class="toc-text">一、数据库分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、项目中如何合理地使用数据库，可以依据如下三个方面入手"><span class="toc-number">1.3.</span> <span class="toc-text">二、项目中如何合理地使用数据库，可以依据如下三个方面入手</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、大、中、小型数据库比较"><span class="toc-number">1.4.</span> <span class="toc-text">三、大、中、小型数据库比较</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、SQL可以分为以下几种类型"><span class="toc-number">1.5.</span> <span class="toc-text">四、SQL可以分为以下几种类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、目前主流的数据库"><span class="toc-number">1.6.</span> <span class="toc-text">五、目前主流的数据库</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装oracle数据库"><span class="toc-number"></span> <span class="toc-text">安装oracle数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据库安装–解压–纯英文路径不能有空格"><span class="toc-number">0.1.</span> <span class="toc-text">数据库安装–解压–纯英文路径不能有空格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sqlplus基本操作使用"><span class="toc-number">0.2.</span> <span class="toc-text">sqlplus基本操作使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Oracle常用命令"><span class="toc-number">1.</span> <span class="toc-text">Oracle常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#oracle中的常用数据类型"><span class="toc-number">1.1.</span> <span class="toc-text">oracle中的常用数据类型</span></a></li></ol></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
+  
+  
+  
 
   
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://blog.weiyingbin.cn/2018/04/23/Oracle数据库安装及基本语法/",
+  owner: 'weiyingbin',
+  repo: 'gitment-comments',
+  oauth: {
+    client_id: 'be2e4b08a7a3cb274e30',
+    client_secret: 'ae21ab4a3a33e845b98a58c07549d62d5c18cc80',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
 
 
@@ -541,8 +607,8 @@ select constraint_name, table_name from user_constraints;
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
