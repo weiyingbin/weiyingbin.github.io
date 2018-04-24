@@ -8,23 +8,23 @@
   <link rel="dns-prefetch" href="http://blog.weiyingbin.cn">
   <title>Oracle数据库安装及基本语法 | 魏迎宾的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="数据库简介基本概念数据库 : 按照数据结构来组织,存储和管理数据的仓库.这三个部分就对应了数据库发展所经理的几个阶段: 存储:  使用打孔卡片,以二进制的形式存储数据 1951雷明顿兰德 公司.推出磁带驱动器 1956IBM推出磁盘驱动器和随机存储技术.  组织:  文件系统 网状模型 层次模型 关系模型(目前的主流) 面向对象  管理: IBM于1974年推出结构化查询语句(Structured">
+  <meta name="description" content="数据库简介基本概念数据库 : 按照数据结构来组织,存储和管理数据的仓库.这三个部分就对应了数据库发展所经理的几个阶段: 存储:  使用打孔卡片,以二进制的形式存储数据 1951雷明顿兰德 公司.推出磁带驱动器 1956IBM推出磁盘驱动器和随机存储技术.">
 <meta name="keywords" content="Java,IT,软件开发,工程师,后端开发,Android,Web前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Oracle数据库安装及基本语法">
 <meta property="og:url" content="http://blog.weiyingbin.cn/2018/04/23/Oracle数据库安装及基本语法/index.html">
 <meta property="og:site_name" content="魏迎宾的博客">
-<meta property="og:description" content="数据库简介基本概念数据库 : 按照数据结构来组织,存储和管理数据的仓库.这三个部分就对应了数据库发展所经理的几个阶段: 存储:  使用打孔卡片,以二进制的形式存储数据 1951雷明顿兰德 公司.推出磁带驱动器 1956IBM推出磁盘驱动器和随机存储技术.  组织:  文件系统 网状模型 层次模型 关系模型(目前的主流) 面向对象  管理: IBM于1974年推出结构化查询语句(Structured">
+<meta property="og:description" content="数据库简介基本概念数据库 : 按照数据结构来组织,存储和管理数据的仓库.这三个部分就对应了数据库发展所经理的几个阶段: 存储:  使用打孔卡片,以二进制的形式存储数据 1951雷明顿兰德 公司.推出磁带驱动器 1956IBM推出磁盘驱动器和随机存储技术.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/a0a47eaee2a981304e835e6dae2ec0e7ba40f746/1.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/7ad3387c339cebdfcde5fe49b5ca269c292e0fa8/2.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/7ad3387c339cebdfcde5fe49b5ca269c292e0fa8/3.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/7ad3387c339cebdfcde5fe49b5ca269c292e0fa8/4.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/7ad3387c339cebdfcde5fe49b5ca269c292e0fa8/5.png">
-<meta property="og:updated_time" content="2018-04-23T11:07:10.254Z">
+<meta property="og:updated_time" content="2018-04-23T11:22:26.480Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle数据库安装及基本语法">
-<meta name="twitter:description" content="数据库简介基本概念数据库 : 按照数据结构来组织,存储和管理数据的仓库.这三个部分就对应了数据库发展所经理的几个阶段: 存储:  使用打孔卡片,以二进制的形式存储数据 1951雷明顿兰德 公司.推出磁带驱动器 1956IBM推出磁盘驱动器和随机存储技术.  组织:  文件系统 网状模型 层次模型 关系模型(目前的主流) 面向对象  管理: IBM于1974年推出结构化查询语句(Structured">
+<meta name="twitter:description" content="数据库简介基本概念数据库 : 按照数据结构来组织,存储和管理数据的仓库.这三个部分就对应了数据库发展所经理的几个阶段: 存储:  使用打孔卡片,以二进制的形式存储数据 1951雷明顿兰德 公司.推出磁带驱动器 1956IBM推出磁盘驱动器和随机存储技术.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/weiyingbin/JAVA_XUE_0201/a0a47eaee2a981304e835e6dae2ec0e7ba40f746/1.png">
   
     <link rel="alternative" href="/atom.xml" title="魏迎宾的博客" type="application/atom+xml">
@@ -190,11 +190,12 @@
 <ul>
 <li>使用打孔卡片,以二进制的形式存储数据</li>
 <li>1951雷明顿兰德 公司.推出磁带驱动器</li>
-<li>1956IBM推出磁盘驱动器和随机存储技术.</li>
-</ul>
+<li><p>1956IBM推出磁盘驱动器和随机存储技术.</p>
+<a id="more"></a>
 <p>组织:</p>
-<ul>
-<li>文件系统</li>
+</li>
+<li><p>文件系统</p>
+</li>
 <li>网状模型</li>
 <li>层次模型</li>
 <li>关系模型(目前的主流)</li>

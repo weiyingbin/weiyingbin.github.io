@@ -8,18 +8,20 @@
   <link rel="dns-prefetch" href="http://blog.weiyingbin.cn">
   <title>Spring学习笔记Day01 | 魏迎宾的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.Spring概述1.1 什么是Spring？Spring是一个开源框架，Spring是于2003年兴起的一个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One-J2EE Development and Design中阐述的部分理念和原型衍生而来。它是为了解决企业应用开发的复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允许使用者选择使用哪">
+  <meta name="description" content="1.Spring概述1.1 什么是Spring？Spring是一个开源框架，Spring是于2003年兴起的一个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One-J2EE Development and Design中阐述的部分理念和原型衍生而来">
 <meta name="keywords" content="Java,IT,软件开发,工程师,后端开发,Android,Web前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Spring学习笔记Day01">
 <meta property="og:url" content="http://blog.weiyingbin.cn/2018/04/23/spring学习笔记day01/index.html">
 <meta property="og:site_name" content="魏迎宾的博客">
-<meta property="og:description" content="1.Spring概述1.1 什么是Spring？Spring是一个开源框架，Spring是于2003年兴起的一个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One-J2EE Development and Design中阐述的部分理念和原型衍生而来。它是为了解决企业应用开发的复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允许使用者选择使用哪">
+<meta property="og:description" content="1.Spring概述1.1 什么是Spring？Spring是一个开源框架，Spring是于2003年兴起的一个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One-J2EE Development and Design中阐述的部分理念和原型衍生而来">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-23T08:30:36.135Z">
+<meta property="og:image" content="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=9e32d9ec9213b07ea9b0585a6dbefa46/d788d43f8794a4c218deb9e60ff41bd5ac6e3979.jpg">
+<meta property="og:updated_time" content="2018-04-24T12:23:18.459Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring学习笔记Day01">
-<meta name="twitter:description" content="1.Spring概述1.1 什么是Spring？Spring是一个开源框架，Spring是于2003年兴起的一个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One-J2EE Development and Design中阐述的部分理念和原型衍生而来。它是为了解决企业应用开发的复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允许使用者选择使用哪">
+<meta name="twitter:description" content="1.Spring概述1.1 什么是Spring？Spring是一个开源框架，Spring是于2003年兴起的一个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One-J2EE Development and Design中阐述的部分理念和原型衍生而来">
+<meta name="twitter:image" content="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=9e32d9ec9213b07ea9b0585a6dbefa46/d788d43f8794a4c218deb9e60ff41bd5ac6e3979.jpg">
   
     <link rel="alternative" href="/atom.xml" title="魏迎宾的博客" type="application/atom+xml">
   
@@ -179,8 +181,549 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="1-Spring概述"><a href="#1-Spring概述" class="headerlink" title="1.Spring概述"></a>1.Spring概述</h1><h2 id="1-1-什么是Spring？"><a href="#1-1-什么是Spring？" class="headerlink" title="1.1 什么是Spring？"></a>1.1 什么是Spring？</h2><p>Spring是一个开源框架，Spring是于2003年兴起的一个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One-J2EE Development and Design中阐述的部分理念和原型衍生而来。它是为了解决企业应用开发的复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允许使用者选择使用哪一个组件，同时为J2EE应用程序开发提供集成的框架。Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。然而，Spring的用途不仅限于服务器端的开发。从简单性、可测试性和松耦合的角度而言，任何Java应用都可以从Spring中受益。Spring的核心是控制反转（IoC）和面向切面（AOP）。简单来说，Spring是一个分层的JavaSE/EE full-stack(一站式)轻量级开源框架。</p>
-<h2 id="1-2-Spring是干什么的（有什么用）？"><a href="#1-2-Spring是干什么的（有什么用）？" class="headerlink" title="1.2 Spring是干什么的（有什么用）？"></a>1.2 Spring是干什么的（有什么用）？</h2><p>more</p>
+        <h2 id="1-Spring概述"><a href="#1-Spring概述" class="headerlink" title="1.Spring概述"></a>1.Spring概述</h2><h3 id="1-1-什么是Spring？"><a href="#1-1-什么是Spring？" class="headerlink" title="1.1 什么是Spring？"></a>1.1 什么是Spring？</h3><p>Spring是一个开源框架，Spring是于2003年兴起的一个轻量级的Java 开发框架，由Rod Johnson 在其著作Expert One-On-One-J2EE Development and Design中阐述的部分理念和原型衍生而来<a id="more"></a>它是为了解决企业应用开发的复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允许使用者选择使用哪一个组件，同时为J2EE应用程序开发提供集成的框架。Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。然而，Spring的用途不仅限于服务器端的开发。从简单性、可测试性和松耦合的角度而言，任何Java应用都可以从Spring中受益。Spring的核心是控制反转（IoC）和面向切面（AOP）。简单来说，Spring是一个分层的JavaSE/EE full-stack(一站式)轻量级开源框架。</p>
+<h3 id="1-2-Spring是干什么的（有什么用）？"><a href="#1-2-Spring是干什么的（有什么用）？" class="headerlink" title="1.2 Spring是干什么的（有什么用）？"></a>1.2 Spring是干什么的（有什么用）？</h3><pre><code>spring可以让系统结构变得复杂难以琢磨    
+可以让系统臃肿性能低下    
+可以让使用熟练的人在菜鸟碰到莫名其妙的异常时展现自己“高深”的技术水平
+</code></pre><p>刚开始写程序肯定体会不到Spring的好处，包括不接触大型的项目也体会不到Spring的好处。如果要写一个HelloWord，也可以用Spring，但是导包导半天，配置文件还要半天，而不用Spring一行代码就可以解决的问题。</p>
+<p>那Spring到第是干嘛的呢？</p>
+<p>我们知道在SSH框架中，Struts是用来做应用层的，它主要负责调用业务逻辑。而Hibernate是持久层框架，它主要负责与数据库的交互。Spring就是一个管理容器，它不属于J2EE应用中的任何一层，但它提供了对象依赖注入的思想,为每个层中遇到的实际问题提供了大量现成的模板类。使用这些模板类的方法很简单，大多数情况下只需要你在配置文件里配置一下就可以实现诸如事务管理或安全性控制这样的复杂问题。使用Spring的代码不依赖于框架，而依赖于接口，这对实现应用各层之间的解耦是很有利的。</p>
+<h3 id="1-3-Spring体系结构"><a href="#1-3-Spring体系结构" class="headerlink" title="1.3 Spring体系结构"></a>1.3 Spring体系结构</h3><p>Spring 框架是一个分层架构，由 7 个定义良好的模块组成。Spring 模块构建在核心容器之上，核心容器定义了创建、配置和管理 bean 的方式，如图 1 所示。<br><img src="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=9e32d9ec9213b07ea9b0585a6dbefa46/d788d43f8794a4c218deb9e60ff41bd5ac6e3979.jpg" alt="图1.Spring框架的7个模块"></p>
+<p>图1.Spring框架的7个模块（图片来自百度百科）</p>
+<p>组成 Spring 框架的每个模块（或组件）都可以单独存在，或者与其他一个或多个模块联合实现。每个模块的功能如下：</p>
+<ul>
+<li><p><strong>核心容器：</strong>核心容器提供 Spring 框架的基本功能。核心容器的主要组件是 BeanFactory，它是工厂模式的实现。BeanFactory 使用控制反转 （IOC） 模式将应用程序的配置和依赖性规范与实际的应用程序代码分开。</p>
+</li>
+<li><p><strong>Spring 上下文：</strong>Spring 上下文是一个配置文件，向 Spring 框架提供上下文信息。Spring 上下文包括企业服务，例如 JNDI、EJB、电子邮件、国际化、校验和调度功能。</p>
+</li>
+<li><p><strong>Spring AOP：</strong>通过配置管理特性，Spring AOP 模块直接将面向方面的编程功能集成到了 Spring 框架中。所以，可以很容易地使 Spring 框架管理的任何对象支持 AOP。Spring AOP 模块为基于 Spring 的应用程序中的对象提供了事务管理服务。通过使用 Spring AOP，不用依赖 EJB 组件，就可以将声明性事务管理集成到应用程序中。</p>
+</li>
+<li><p><strong>Spring DAO：</strong>JDBC DAO 抽象层提供了有意义的异常层次结构，可用该结构来管理异常处理和不同数据库供应商抛出的错误消息。异常层次结构简化了错误处理，并且极大地降低了需要编写的异常代码数量（例如打开和关闭连接）。Spring DAO 的面向 JDBC 的异常遵从通用的 DAO 异常层次结构。</p>
+</li>
+<li><p><strong>Spring ORM：</strong>Spring 框架插入了若干个 ORM 框架，从而提供了 ORM 的对象关系工具，其中包括 JDO、Hibernate 和 iBatis SQL Map。所有这些都遵从 Spring 的通用事务和 DAO 异常层次结构。</p>
+</li>
+<li><p><strong>Spring Web 模块：</strong>Web 上下文模块建立在应用程序上下文模块之上，为基于 Web 的应用程序提供了上下文。所以，Spring 框架支持与 Jakarta Struts 的集成。Web 模块还简化了处理多部分请求以及将请求参数绑定到域对象的工作。</p>
+</li>
+<li><p><strong>Spring MVC 框架：</strong>MVC 框架是一个全功能的构建 Web 应用程序的 MVC 实现。通过策略接口，MVC 框架变成为高度可配置的，MVC 容纳了大量视图技术，其中包括 JSP、Velocity、Tiles、iText 和 POI。</p>
+</li>
+</ul>
+<p>Spring 框架的功能可以用在任何 J2EE 服务器中，大多数功能也适用于不受管理的环境。Spring 的核心要点是：支持不绑定到特定 J2EE 服务的可重用业务和数据访问对象。毫无疑问，这样的对象可以在不同 J2EE 环境 （Web 或 EJB）、独立应用程序、测试环境之间重用。</p>
+<h3 id="1-4-Spring核心"><a href="#1-4-Spring核心" class="headerlink" title="1.4 Spring核心"></a>1.4 Spring核心</h3><p>Spring的核心是<strong>控制反转（IoC）</strong>和<strong>面向切面（AOP）</strong>。</p>
+<h3 id="1-5-Spring的优点"><a href="#1-5-Spring的优点" class="headerlink" title="1.5 Spring的优点"></a>1.5 Spring的优点</h3><ul>
+<li>方便解耦，简化开发  （高内聚低耦合）<ul>
+<li>Spring就是一个大工厂（容器），可以将所有对象创建和依赖关系维护，交给Spring管理</li>
+<li>spring工厂是用于生成bean</li>
+</ul>
+</li>
+<li>AOP编程的支持<ul>
+<li>Spring提供面向切面编程，可以方便的实现对程序进行权限拦截、运行监控等功能</li>
+</ul>
+</li>
+<li>声明式事务的支持<ul>
+<li>只需要通过配置就可以完成对事务的管理，而无需手动编程</li>
+</ul>
+</li>
+<li>方便程序的测试<ul>
+<li>Spring对Junit4支持，可以通过注解方便的测试Spring程序</li>
+</ul>
+</li>
+<li>方便集成各种优秀框架<ul>
+<li>Spring不排斥各种优秀的开源框架，其内部提供了对各种优秀框架（如：Struts、Hibernate、MyBatis、Quartz等）的直接支持</li>
+</ul>
+</li>
+<li>降低JavaEE API的使用难度<ul>
+<li>Spring 对JavaEE开发中非常难用的一些API（JDBC、JavaMail、远程调用等），都提供了封装，使这些API应用难度大大降低<h2 id="2-Spring的使用（IoC-amp-DI）"><a href="#2-Spring的使用（IoC-amp-DI）" class="headerlink" title="2.Spring的使用（IoC&amp;DI）"></a>2.Spring的使用（IoC&amp;DI）</h2><h3 id="2-1-IoC（控制反转）"><a href="#2-1-IoC（控制反转）" class="headerlink" title="2.1 IoC（控制反转）"></a>2.1 IoC（控制反转）</h3>控制反转模式（也称作依赖性介入）的基本概念是：不创建对象，但是描述创建它们的方式。在代码中不直接与对象和服务连接，但在配置文件中描述哪一个组件需要哪一项服务。容器 （在 Spring 框架中是 IOC 容器） 负责将这些联系在一起。</li>
+</ul>
+</li>
+</ul>
+<p>Spring 设计的核心是 org.springframework.beans 包，它的设计目标是与 JavaBean 组件一起使用。这个包通常不是由用户直接使用，而是由服务器将其用作其他多数功能的底层中介。下一个最高级抽象是 BeanFactory 接口，它是工厂设计模式的实现，允许通过名称创建和检索对象。BeanFactory 也可以管理对象之间的关系。</p>
+<h4 id="IoC使用案例"><a href="#IoC使用案例" class="headerlink" title="IoC使用案例"></a>IoC使用案例</h4><ol>
+<li>导入jar包，4个核心（beans、core、context、expression） + 1个依赖（commons-loggins…jar）。</li>
+<li><p>目标类，提供UserSerVice接口和实现类，并获得UserSerVice实现类的实例。之前开发中，直接new一个对象即可。代码如下所示：</p>
+<p> UerSerVice接口</p>
+<pre><code>public interface IUserService {
+    public void addUser();
+}
+</code></pre><p> 接口实现类</p>
+<pre><code>public class UserServiceImpl implements IUserService {
+    @Override
+    public void addUser() {
+        System.out.println(&quot;add user&quot;);
+    }
+}
+</code></pre><p> 测试方法</p>
+<pre><code>@Test
+public void test01(){
+    IUserService ius = new UserServiceImpl();
+    ius.addUser();
+} 
+</code></pre></li>
+<li><p>将这个案例使用Spring来完成，学习spring之后，将由Spring创建对象实例–&gt; IoC 控制反转（Inverse of  Control）之后需要实例对象时，从spring工厂（容器）中获得，需要将实现类的全限定名称配置到xml文件中。</p>
+<p> 配置文件：</p>
+<ul>
+<li>位置：任意，开发中一般在classpath（src）下</li>
+<li>名称：任意如:beans.xml，开发中常用applicationContext.xml</li>
+<li>内容：添加约束</li>
+<li><p>&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;</p>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="
+      http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans.xsd"><br><br>  <!-- bean definitions here --><br>  <!-- id:配置文件中 bean的唯一标示 (名称随意) --><br>  <!-- class:类的全限定路径 --><br>  <bean id="userServiceId" class="com.hwua.a.ioc.UserServiceImpl"></bean><br></beans>
+
+<p>测试方法：</p>
+<p>@Test<br>  public void test01() {</p>
+<pre><code>//1.之前写法
+</code></pre><p>//        IUserService ius = new UserServiceImpl();<br>//        ius.addUser();</p>
+<pre><code>//2.spring的写法
+//1 获得容器(整合Web后不用自己写)
+String xmlPath = &quot;com/hwua/a/ioc/beans.xml&quot;;
+ApplicationContext context = 
+        new ClassPathXmlApplicationContext(xmlPath);
+//2获得内容 --不需要自己new，都是从spring容器获得
+IUserService ius = (IUserService) 
+        context.getBean(&quot;userServiceId&quot;);
+ius.addUser();
+</code></pre><p>  }<br>}</p>
+<h3 id="2-2-DI（依赖注入）"><a href="#2-2-DI（依赖注入）" class="headerlink" title="2.2 DI（依赖注入）"></a>2.2 DI（依赖注入）</h3><p>依赖：一个对象需要使用另一个对象</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>注入：通过setter方法进行另一个对象实例化设置</p>
+<p>例如：</p>
+<pre><code>class BookServiceImpl{
+//之前开发：接口 = 实现类  （service和dao耦合）
+    //private BookDao bookDao = new BookDaoImpl();
+     //spring之后 （解耦：service实现类使用dao接口，不知道具体的实现类）
+    private BookDao bookDao;
+    setter方法
+}
+</code></pre><p>模拟spring执行过程：</p>
+<ul>
+<li><p>创建service实例：BookService bookService = new BookServiceImpl()–&gt;IoC  <bean></bean></p>
+</li>
+<li><p>创建dao实例：BookDao bookDao = new BookDaoImple()    –&gt;IoC</p>
+</li>
+<li><p>将dao设置给service：bookService.setBookDao(bookDao)–&gt;DI   <property></property></p>
+</li>
+</ul>
+<h4 id="DI使用案例"><a href="#DI使用案例" class="headerlink" title="DI使用案例"></a>DI使用案例</h4><ol>
+<li><p>目标类</p>
+<ul>
+<li>创建BookDao接口和实现类</li>
+<li>创建BookService接口和实现类</li>
+<li>将dao和service配置 xml文件</li>
+<li><p>使用api测试</p>
+<p>dao接口与实现类</p>
+<p>  public interface IBookDao {</p>
+<pre><code>public void addBook();
+</code></pre><p>  }</p>
+<p>  public class BookDaoImpl implements IBookDao {</p>
+<p>  @Override<br>  public void addBook() {</p>
+<pre><code>System.out.println(&quot;add book&quot;);
+</code></pre><p>  }</p>
+<p>service接口与实现类</p>
+<p>  public interface IBookService {</p>
+<pre><code>public abstract void addBook();
+</code></pre><p>  }</p>
+<p>  public class BookServiceImpl implements IBookService {</p>
+<pre><code>// 方式1：之前，接口=实现类
+</code></pre><p>  //    private IBookDao bookDao = new BookDaoImpl();</p>
+<pre><code>// 方式2：接口 + setter
+private IBookDao bookDao;
+public void setBookDao(IBookDao bookDao) {
+    this.bookDao = bookDao;
+}
+
+@Override
+public void addBook(){
+    this.bookDao.addBook();
+}
+</code></pre><p>  }</p>
+<p>配置文件</p>
+<p>  &lt;?xml version=”1.0” encoding=”UTF-8”?&gt;</p>
+  <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="
+          http://www.springframework.org/schema/beans 
+          http://www.springframework.org/schema/beans/spring-beans.xsd"><br><br>      <bean id="bookServiceId" class="com.hwua.b.di.BookServiceImpl"><br>          <!-- property:配置对象中成员属性，使用其对应的set方法注入 --><br>          <!-- name:类中的属性名称 --><br>          <!-- value:基本类型数据 int Integer --><br>          <!-- ref:引用数据类型 一般引用id --><br>          <property name="iud" ref="bookDaoId"></property><br>      </bean><br>      <bean id="bookDaoId" class="com.hwua.b.di.BookDaoImpl"></bean><br><br>  </beans>
+
+<p>测试方法</p>
+<p>  @Test</p>
+<pre><code>public void demo01(){
+    //从spring容器获得
+    String xmlPath = &quot;com/hwua/di/beans.xml&quot;;
+    ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+    BookService bookService = (BookService) applicationContext.getBean(&quot;bookServiceId&quot;);
+
+    bookService.addBook();
+
+}
+</code></pre></li>
+</ul>
+</li>
+</ol>
+<h2 id="3-bean定义"><a href="#3-bean定义" class="headerlink" title="3.bean定义"></a>3.bean定义</h2><p>被称作 bean 的对象是构成应用程序的支柱也是由 Spring IoC 容器管理的。bean 是一个被实例化，组装，并通过 Spring IoC 容器所管理的对象。这些 bean 是由用容器提供的配置元数据创建的，例如，已经在先前章节看到的，在 XML 的表单中的 定义。</p>
+<h3 id="3-1-bean的实例化方式"><a href="#3-1-bean的实例化方式" class="headerlink" title="3.1 bean的实例化方式"></a>3.1 bean的实例化方式</h3><p>bean的实例化方式有3中：</p>
+<ul>
+<li>默认构造</li>
+<li>静态工厂</li>
+<li>实例工厂</li>
+</ul>
+<h4 id="3-1-1-默认构造"><a href="#3-1-1-默认构造" class="headerlink" title="3.1.1 默认构造"></a>3.1.1 默认构造</h4><pre><code>&lt;bean id=&quot;&quot; class=&quot;&quot;&gt;
+</code></pre><h4 id="3-1-2-静态工厂"><a href="#3-1-2-静态工厂" class="headerlink" title="3.1.2 静态工厂"></a>3.1.2 静态工厂</h4><p>静态工厂用于生成实例化对象，所有方法必须是static</p>
+<pre><code>&lt;bean id=&quot;&quot;  class=&quot;工厂全限定类名&quot;  factory-method=&quot;静态方法&quot;&gt;
+</code></pre><h4 id="静态工厂使用案例"><a href="#静态工厂使用案例" class="headerlink" title="静态工厂使用案例"></a>静态工厂使用案例</h4><p>首先创建一个类，里面有一个普通方法</p>
+<pre><code>public class Dog {
+    public void sayHi() {
+        System.out.println(&quot;汪汪汪！&quot;);
+    }
+}
+</code></pre><p>然后新建一个工厂用来生成实例</p>
+<pre><code>public class MyBeanFactory {
+    /**
+     * 创建实例
+     * 
+     * @return
+     */
+    public static Dog getBean() {
+        return new Dog();
+    }
+}
+</code></pre><p>之后写配置文件beans.xml</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd&quot;&gt;
+
+    &lt;!-- 使用静态工厂提供的方法获取实例对象 --&gt;
+    &lt;!-- 一般配合其他框架的静态工厂获取bean对象使用 --&gt;
+    &lt;!-- class 工厂的引用 --&gt;
+    &lt;!-- factory-method=&quot;getBean&quot;方法名 --&gt;
+    &lt;bean id=&quot;dogId&quot; class=&quot;com.spring.staticfactory.MyBeanFactory&quot;
+        factory-method=&quot;getBean&quot;&gt;&lt;/bean&gt;
+&lt;/beans&gt;
+</code></pre><p>测试方法</p>
+<pre><code>@Test
+    public void test1() {
+        // 1 获得容器(整合Web后不用自己写)
+        String xmlPath = &quot;/com/spring/staticfactory/beans.xml&quot;;
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+        // 2获得内容 --不需要自己new，都是从spring容器获得
+        Dog bean = (Dog) applicationContext.getBean(&quot;dogId&quot;);
+        bean.sayHi();
+        // 执行过程大致如下:
+        // 1.加载beans.xml配置文件
+        // 2.调用工厂的getBean方法获取User实例对象
+        // 3.根据id进行匹配 返回对象
+    }
+</code></pre><h4 id="3-1-3-实例工厂"><a href="#3-1-3-实例工厂" class="headerlink" title="3.1.3 实例工厂"></a>3.1.3 实例工厂</h4><p>实例工厂：必须先有工厂实例对象，通过实例对象创建对象。提供所有的方法都是“非静态”的。</p>
+<h4 id="实例工厂使用案例"><a href="#实例工厂使用案例" class="headerlink" title="实例工厂使用案例"></a>实例工厂使用案例</h4><p>工厂类</p>
+<pre><code>public class MyBeanFactory {
+    /**
+     * 创建实例
+     * 
+     * @return
+     */
+    public Dog getBean() {
+        return new Dog();
+    }
+}
+</code></pre><p>配置文件beans.xml</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd&quot;&gt;
+    &lt;!-- 配置工厂bean(实例对象) --&gt;
+    &lt;bean id=&quot;myFactoryId&quot; class=&quot;com.spring.shilifactory.MyBeanFactory&quot;&gt;&lt;/bean&gt;
+    &lt;!-- 配置dogbean(对象)-获取依赖于工厂bean(对象) --&gt;
+    &lt;bean id=&quot;dogId&quot; factory-bean=&quot;myFactoryId&quot; factory-method=&quot;getBean&quot;&gt;&lt;/bean&gt;
+&lt;/beans&gt;
+</code></pre><p>测试方法</p>
+<pre><code>@org.junit.Test
+    public void test2() {
+        String xmlPath = &quot;/com/spring/shilifactory/beans.xml&quot;;
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+        Dog bean = (Dog) applicationContext.getBean(&quot;dogId&quot;);
+        bean.sayHi();
+    }
+</code></pre><h3 id="3-2-bean的种类"><a href="#3-2-bean的种类" class="headerlink" title="3.2 bean的种类"></a>3.2 bean的种类</h3><ol>
+<li>普通bean：之前操作的都是普通bean。<code>&lt;bean id=&quot;&quot; class=&quot;A&quot;&gt;</code> ，spring直接创建A实例，并返回</li>
+<li>FactoryBean：是一个特殊的bean，具有工厂生成对象能力，只能生成特定的对象。<ul>
+<li>bean必须使用 FactoryBean接口，此接口提供方法 getObject() 用于获得特定bean。</li>
+<li><bean id="" class="FB"> 先创建FB实例，使用调用getObject()方法，并返回方法的返回值<br>  FB fb = new FB();<br>  return fb.getObject();</bean></li>
+</ul>
+</li>
+<li><p>BeanFactory 和 FactoryBean 对比？</p>
+<p> BeanFactory：工厂，用于生成任意bean。<br> FactoryBean：特殊bean，用于生成另一个特定的bean。例如：ProxyFactoryBean ，此工厂bean用于生产代理。<bean id="" class="....ProxyFactoryBean"> 获得代理对象实例。<br> BeanFactory和FactoryBean其实没有什么比较性的，只是两者的名称特别接近，所以有时候会拿出来比较一番</bean></p>
+<h3 id="3-3-bean的作用域"><a href="#3-3-bean的作用域" class="headerlink" title="3.3 bean的作用域"></a>3.3 bean的作用域</h3><p>当在 Spring 中定义一个 时，你必须声明该 bean 的作用域的选项。例如，为了强制 Spring 在每次需要时都产生一个新的 bean 实例，你应该声明 bean 的作用域的属性为 prototype。同理，如果你想让 Spring 在每次需要时都返回同一个bean实例，你应该声明 bean 的作用域的属性为 singleton。</p>
+</li>
+</ol>
+<p>Spring 框架支持以下五个作用域，如果你使用 web-aware ApplicationContext 时，其中三个是可用的。</p>
+<p>表3-1 bean的五个作用域<br>    <table><br>        <tr><br>            <td>作用域</td><br>            <td>说明</td><br>        </tr><br>        <tr><br>            <td>singleton</td><br>            <td>该作用域将 bean 的定义的限制在每一个 Spring IoC 容器中的一个单一实例(默认)。</td><br>        </tr><br>        <tr><br>            <td>prototype</td><br>            <td>该作用域将单一 bean 的定义限制在任意数量的对象实例。</td><br>        </tr><br>        <tr><br>            <td>request</td><br>            <td>该作用域将 bean 的定义限制为 HTTP 请求。只在 web-aware Spring ApplicationContext 的上下文中有效。</td><br>        </tr><br>        <tr><br>            <td>session</td><br>            <td>该作用域将 bean 的定义限制为 HTTP 会话。 只在web-aware Spring ApplicationContext的上下文中有效。</td><br>        </tr><br>        <tr><br>            <td>global-session</td><br>            <td>该作用域将 bean 的定义限制为全局 HTTP 会话。只在 web-aware Spring ApplicationContext 的上下文中有效。</td><br>        </tr><br>    </table></p>
+<h4 id="3-3-1-singleton-作用域"><a href="#3-3-1-singleton-作用域" class="headerlink" title="3.3.1 singleton 作用域"></a>3.3.1 singleton 作用域</h4><p>如果作用域设置为 singleton，那么 Spring IoC 容器刚好创建一个由该 bean 定义的对象的实例。该单一实例将存储在这种单例 bean 的高速缓存中，以及针对该 bean 的所有后续的请求和引用都返回缓存对象。</p>
+<p>默认作用域是始终是 singleton，但是当仅仅需要 bean 的一个实例时，你可以在 bean 的配置文件中设置作用域的属性为 singleton，如下所示：</p>
+<pre><code>&lt;!-- A bean definition with singleton scope --&gt;
+&lt;bean id=&quot;...&quot; class=&quot;...&quot; scope=&quot;singleton&quot;&gt;
+    &lt;!-- collaborators and configuration for this bean go here --&gt;
+&lt;/bean&gt;
+</code></pre><h4 id="3-3-2-prototype-作用域"><a href="#3-3-2-prototype-作用域" class="headerlink" title="3.3.2 prototype 作用域"></a>3.3.2 prototype 作用域</h4><p>如果作用域设置为 prototype，那么每次特定的 bean 发出请求时 Spring IoC 容器就创建对象的新的 Bean 实例。一般说来，满状态的 bean 使用 prototype 作用域和没有状态的 bean 使用 singleton 作用域。也就是说没执行一次getBean就会获得一个新的实例。</p>
+<p>为了定义 prototype 作用域，你可以在 bean 的配置文件中设置作用域的属性为 prototype，如下所示：</p>
+<pre><code>&lt;!-- A bean definition with singleton scope --&gt;
+&lt;bean id=&quot;...&quot; class=&quot;...&quot; scope=&quot;prototype&quot;&gt;
+   &lt;!-- collaborators and configuration for this bean go here --&gt;
+&lt;/bean&gt;
+</code></pre><h3 id="3-4-bean生命周期"><a href="#3-4-bean生命周期" class="headerlink" title="3.4 bean生命周期"></a>3.4 bean生命周期</h3><ol>
+<li>instantiate bean对象实例化</li>
+<li>populate properties 封装属性</li>
+<li>如果Bean实现BeanNameAware 执行 setBeanName</li>
+<li>如果Bean实现BeanFactoryAware 或者 ApplicationContextAware 设置工厂 setBeanFactory 或者上下文对象 setApplicationContext</li>
+<li>如果存在类实现 BeanPostProcessor（后处理Bean） ，执行postProcessBeforeInitialization</li>
+<li>如果Bean实现InitializingBean 执行 afterPropertiesSet </li>
+<li>调用<bean init-method="init"> 指定初始化方法 init</bean></li>
+<li>如果存在类实现 BeanPostProcessor（处理Bean） ，执行postProcessAfterInitialization</li>
+<li>执行业务处理</li>
+<li>如果Bean实现 DisposableBean 执行 destroy</li>
+<li>调用<bean destroy-method="customerDestroy"> 指定销毁方法 customerDestroy</bean></li>
+</ol>
+<p>bean的生命周期有以上11个步骤。其中主要的是初始化和销毁两个生命周期回调方法，它们在bean的初始化和销毁时是必须的。</p>
+<h4 id="3-4-1-初始化和销毁"><a href="#3-4-1-初始化和销毁" class="headerlink" title="3.4.1 初始化和销毁"></a>3.4.1 初始化和销毁</h4><p>目标方法执行前后执行后，将进行初始化或销毁。</p>
+<pre><code>&lt;bean id=&quot;&quot; class=&quot;&quot; init-method=&quot;初始化方法名称&quot;  destroy-method=&quot;销毁的方法名称&quot;&gt;
+</code></pre><p><strong>例子</strong></p>
+<p>创建一个类</p>
+<pre><code>public class Dog {
+    public void sayHi() {
+        System.out.println(&quot;汪汪汪！&quot;);
+    }
+
+    public void init() {
+        System.out.println(&quot;初始化&quot;);
+    }
+
+    public void destroy() {
+        System.out.println(&quot;销毁了&quot;);
+    }
+}
+</code></pre><p>配置文件beans.xml</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd&quot;&gt;
+    &lt;bean id=&quot;dogId&quot; class=&quot;com.spring.beanlife.Dog&quot; init-method=&quot;init&quot;
+        destroy-method=&quot;destroy&quot;&gt;&lt;/bean&gt;
+&lt;/beans&gt;
+</code></pre><p>测试方法</p>
+<pre><code>@org.junit.Test
+    public void test() {
+        String xmlPath = &quot;/com/spring/beanlife/beans.xml&quot;;
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+        Dog bean = (Dog) applicationContext.getBean(&quot;dogId&quot;);
+        bean.sayHi();
+        // 要求：1.容器必须close，销毁方法执行; 2.必须是单例的
+        // applicationContext.getClass().getMethod(&quot;close&quot;).invoke(applicationContext);
+        // * 此方法接口中没有定义，实现类提供
+        ((AbstractApplicationContext) applicationContext).close();
+    }
+}
+</code></pre><h4 id="3-4-2-bean后置处理器（BeanPostProcessor）"><a href="#3-4-2-bean后置处理器（BeanPostProcessor）" class="headerlink" title="3.4.2 bean后置处理器（BeanPostProcessor）"></a>3.4.2 bean后置处理器（BeanPostProcessor）</h4><p>BeanPostProcessor 接口定义回调方法，你可以实现该方法来提供自己的实例化逻辑，依赖解析逻辑等。你也可以在 Spring 容器通过插入一个或多个 BeanPostProcessor 的实现来完成实例化，配置和初始化一个bean之后实现一些自定义逻辑回调方法。</p>
+<p>spring 提供一种机制，只要实现此接口BeanPostProcessor，并将实现类提供给spring容器，spring容器将自动执行，在初始化方法前执行before()，在初始化方法后执行after() 。</p>
+<p>你可以配置多个 BeanPostProcesso r接口，通过设置 BeanPostProcessor 实现的 Ordered 接口提供的 order 属性来控制这些 BeanPostProcessor 接口的执行顺序。</p>
+<p>BeanPostProcessor 可以对 bean（或对象）实例进行操作，这意味着 Spring IoC 容器实例化一个 bean 实例，然后 BeanPostProcessor 接口进行它们的工作。</p>
+<p><strong>例子</strong></p>
+<p>编写一个类实现BeanPostProcessor接口</p>
+<pre><code>public class MyBeanPostProcessor implements BeanPostProcessor {
+
+    @Override
+    public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+        // TODO Auto-generated method stub
+        System.out.println(&quot;前方法 ： &quot; + beanName);
+        return bean;
+    }
+
+    @Override
+    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+        // TODO Auto-generated method stub
+        System.out.println(&quot;后方法 ： &quot; + beanName);
+        // bean 目标对象
+        // 生成 jdk 代理
+        Proxy.newProxyInstance(MyBeanPostProcessor.class.getClassLoader(), bean.getClass().getInterfaces(),
+                new InvocationHandler() {
+
+                    @Override
+                    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                        // TODO Auto-generated method stub
+                        System.out.println(&quot;------开启事务&quot;);
+                        Object object = method.invoke(bean, args);
+                        System.out.println(&quot;------提交事务&quot;);
+                        return object;
+                    }
+                });
+        return bean;
+    }
+}
+</code></pre><p>接着使用上一节中的Dog类，在配置文件中加入</p>
+<pre><code>&lt;bean class=&quot;com.spring.beanlife.MyBeanPostProcessor&quot;&gt;&lt;/bean&gt;
+</code></pre><p>测试方法</p>
+<pre><code>@org.junit.Test
+    public void test() {
+        String xmlPath = &quot;/com/spring/beanlife/beans.xml&quot;;
+        AbstractApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+        Dog bean = (Dog) applicationContext.getBean(&quot;dogId&quot;);
+        bean.getMessage();
+        // 要求：1.容器必须close，销毁方法执行; 2.必须是单例的
+        // applicationContext.getClass().getMethod(&quot;close&quot;).invoke(applicationContext);
+        // * 此方法接口中没有定义，实现类提供
+        applicationContext.registerShutdownHook();
+        ((AbstractApplicationContext) applicationContext).close();
+    }
+</code></pre><h2 id="4-属性依赖注入"><a href="#4-属性依赖注入" class="headerlink" title="4.属性依赖注入"></a>4.属性依赖注入</h2><p>依赖注入的方式有手动装配和自动装配。手动装配又可分为基于xml文件的装配和基于注解的装配。基于xml装配又分为基于构造函数和基于设值函数两种。</p>
+<h3 id="4-1-基于构造函数注入"><a href="#4-1-基于构造函数注入" class="headerlink" title="4.1 基于构造函数注入"></a>4.1 基于构造函数注入</h3><p>目标类</p>
+<pre><code>public class User {
+
+    private Integer uid;
+    private String username;
+    private Integer age;
+
+    public User(Integer uid, String username) {
+        super();
+        this.uid = uid;
+        this.username = username;
+    }
+
+    public User(String username, Integer age) {
+        super();
+        this.username = username;
+        this.age = age;
+    }
+}
+</code></pre><p>spring配置</p>
+<pre><code>&lt;!-- 构造方法注入 
+    * &lt;constructor-arg&gt; 用于配置构造方法一个参数argument
+        name ：参数的名称
+        value：设置普通数据
+        ref：引用数据，一般是另一个bean id值
+
+        index ：参数的索引号，从0开始 。如果只有索引，匹配到了多个构造方法时，默认使用第一个。
+        type ：确定参数类型
+    例如：使用名称name
+        &lt;constructor-arg name=&quot;username&quot; value=&quot;jack&quot;&gt;&lt;/constructor-arg&gt;
+        &lt;constructor-arg name=&quot;age&quot; value=&quot;18&quot;&gt;&lt;/constructor-arg&gt;
+    例如2：【类型type 和  索引 index】 常用
+        &lt;constructor-arg index=&quot;0&quot; value=&quot;1&quot;&gt;&lt;/constructor-arg&gt;
+        &lt;constructor-arg index=&quot;1&quot; value=&quot;2&quot;&gt;&lt;/constructor-arg&gt;
+
+        &lt;constructor-arg index=&quot;0&quot; type=&quot;java.lang.String&quot; value=&quot;1&quot;&gt;&lt;/constructor-arg&gt;
+        &lt;constructor-arg index=&quot;1&quot; type=&quot;java.lang.Integer&quot; value=&quot;2&quot;&gt;&lt;/constructor-arg&gt;
+--&gt;
+&lt;bean id=&quot;userId&quot; class=&quot;com.hwua.xml.a_constructor.User&quot; &gt;
+    &lt;constructor-arg index=&quot;0&quot; type=&quot;java.lang.String&quot; value=&quot;1&quot;&gt;&lt;/constructor-arg&gt;
+    &lt;constructor-arg index=&quot;1&quot; type=&quot;java.lang.Integer&quot; value=&quot;2&quot;&gt;&lt;/constructor-arg&gt;
+&lt;/bean&gt;
+</code></pre><h3 id="4-2-设置值注入（setter注入）"><a href="#4-2-设置值注入（setter注入）" class="headerlink" title="4.2 设置值注入（setter注入）"></a>4.2 设置值注入（setter注入）</h3><!-- setter方法注入 
+        * 普通数据 
+            <property name="" value="值">
+            等效
+            <property name="">
+                <value>值
+        * 引用数据
+            <property name="" ref="另一个bean">
+            等效
+            <property name="">
+                <ref bean="另一个bean"/>
+
+    -->
+<pre><code>&lt;bean id=&quot;personId&quot; class=&quot;com.hwua.xml.b_setter.Person&quot;&gt;
+    &lt;property name=&quot;pname&quot; value=&quot;罗玉凤&quot;&gt;&lt;/property&gt;
+    &lt;property name=&quot;age&quot;&gt;
+        &lt;value&gt;1234&lt;/value&gt;
+    &lt;/property&gt;
+
+    &lt;property name=&quot;homeAddr&quot; ref=&quot;homeAddrId&quot;&gt;&lt;/property&gt;
+    &lt;property name=&quot;companyAddr&quot;&gt;
+        &lt;ref bean=&quot;companyAddrId&quot;/&gt;
+    &lt;/property&gt;
+&lt;/bean&gt;
+
+&lt;bean id=&quot;homeAddrId&quot; class=&quot;com.hwua.xml.b_setter.Address&quot;&gt;
+    &lt;property name=&quot;addr&quot; value=&quot;美国&quot;&gt;&lt;/property&gt;
+    &lt;property name=&quot;tel&quot; value=&quot;911&quot;&gt;&lt;/property&gt;
+&lt;/bean&gt;
+&lt;bean id=&quot;companyAddrId&quot; class=&quot;com.hwua.xml.b_setter.Address&quot;&gt;
+    &lt;property name=&quot;addr&quot; value=&quot;上海&quot;&gt;&lt;/property&gt;
+    &lt;property name=&quot;tel&quot; value=&quot;110&quot;&gt;&lt;/property&gt;
+&lt;/bean&gt;
+</code></pre><h3 id="4-3集合注入"><a href="#4-3集合注入" class="headerlink" title="4.3集合注入"></a>4.3集合注入</h3><p>上面通过value属性来配置基本数据类型进bean中。如果想传多个值那么怎么办呢？对于这种情况Spring提供了四个集合类型和一个数组来配置元素。分别为：String[],List<string>,Set<string>,Map<string>,Properties。</string></string></string></p>
+<pre><code>&lt;!-- 
+        集合的注入都是给&lt;property&gt;添加子标签
+            数组：&lt;array&gt;
+            List：&lt;list&gt;
+            Set：&lt;set&gt;
+            Map：&lt;map&gt; ，map存放k/v 键值对，使用&lt;entry&gt;描述
+            Properties：&lt;props&gt;  &lt;prop key=&quot;&quot;&gt;&lt;/prop&gt;  【】
+
+        普通数据：&lt;value&gt;
+        引用数据：&lt;ref&gt;
+    --&gt;
+    &lt;bean id=&quot;collDataId&quot; class=&quot;com.hwua.xml.e_coll.CollData&quot; &gt;
+        &lt;property name=&quot;arrayData&quot;&gt;
+            &lt;array&gt;
+                &lt;value&gt;罗玉凤&lt;/value&gt;
+                &lt;value&gt;芙蓉&lt;/value&gt;
+                &lt;value&gt;白百合&lt;/value&gt;
+                &lt;value&gt;马蓉&lt;/value&gt;
+            &lt;/array&gt;
+        &lt;/property&gt;
+
+        &lt;property name=&quot;listData&quot;&gt;
+            &lt;list&gt;
+                &lt;value&gt;马云&lt;/value&gt;
+                &lt;value&gt;马化腾&lt;/value&gt;
+                &lt;value&gt;马明哲&lt;/value&gt;
+            &lt;/list&gt;
+        &lt;/property&gt;
+
+        &lt;property name=&quot;setData&quot;&gt;
+            &lt;set&gt;
+                &lt;value&gt;罗玉凤&lt;/value&gt;
+                &lt;value&gt;谢霆锋&lt;/value&gt;
+                &lt;value&gt;陈冠希&lt;/value&gt;
+            &lt;/set&gt;
+        &lt;/property&gt;
+
+        &lt;property name=&quot;mapData&quot;&gt;
+            &lt;map&gt;
+                &lt;entry key=&quot;jack&quot; value=&quot;杰克&quot;&gt;&lt;/entry&gt;
+                &lt;entry&gt;
+                    &lt;key&gt;&lt;value&gt;rose&lt;/value&gt;&lt;/key&gt;
+                    &lt;value&gt;肉丝&lt;/value&gt;
+                &lt;/entry&gt;
+            &lt;/map&gt;
+        &lt;/property&gt;
+
+        &lt;property name=&quot;propsData&quot;&gt;
+            &lt;props&gt;
+                &lt;prop key=&quot;高富帅&quot;&gt;嫐&lt;/prop&gt;
+                &lt;prop key=&quot;白富美&quot;&gt;嬲&lt;/prop&gt;
+                &lt;prop key=&quot;男屌丝&quot;&gt;挊&lt;/prop&gt;
+            &lt;/props&gt;
+        &lt;/property&gt;
+    &lt;/bean&gt;
+</code></pre><h3 id="4-4-基于注解的配置"><a href="#4-4-基于注解的配置" class="headerlink" title="4.4 基于注解的配置"></a>4.4 基于注解的配置</h3><p>从 Spring 2.5 开始就可以使用注解来配置依赖注入。而不是采用 XML 来描述一个 bean 连线，你可以使用相关类，方法或字段声明的注解，将 bean 配置移动到组件类本身。</p>
+<p>在 XML 注入之前进行注解注入，因此后者的配置将通过两种方式的属性连线被前者重写。</p>
+<pre><code>&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
+       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+       xmlns:context=&quot;http://www.springframework.org/schema/context&quot;
+       xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans 
+                              http://www.springframework.org/schema/beans/spring-beans.xsd
+                              http://www.springframework.org/schema/context 
+                              http://www.springframework.org/schema/context/spring-context.xsd&quot;&gt;
+    &lt;!-- 组件扫描，扫描含有注解的类 --&gt;
+    &lt;context:component-scan base-package=&quot;com.hwua.annotation.a_ioc&quot;&gt;&lt;/context:component-scan&gt;
+&lt;/beans&gt;
+</code></pre><h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5.总结"></a>5.总结</h2><p>第一天的主要内容为spring两大核心中的IoC。通过今天的学习，知道了IoC其实是一个容器，用来管理bean的容器。那么bean是什么呢，有道翻译为“毫无价值的东西”…其实bean可以理解为对象，IoC是一个管理对象的容器，这样貌似挺合理的。</p>
 
       
 
@@ -317,7 +860,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Spring概述"><span class="toc-number">1.</span> <span class="toc-text">1.Spring概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-什么是Spring？"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 什么是Spring？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-Spring是干什么的（有什么用）？"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 Spring是干什么的（有什么用）？</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Spring概述"><span class="toc-number">1.</span> <span class="toc-text">1.Spring概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-什么是Spring？"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 什么是Spring？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-Spring是干什么的（有什么用）？"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 Spring是干什么的（有什么用）？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-Spring体系结构"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 Spring体系结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-Spring核心"><span class="toc-number">1.4.</span> <span class="toc-text">1.4 Spring核心</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-Spring的优点"><span class="toc-number">1.5.</span> <span class="toc-text">1.5 Spring的优点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Spring的使用（IoC-amp-DI）"><span class="toc-number">2.</span> <span class="toc-text">2.Spring的使用（IoC&amp;DI）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-IoC（控制反转）"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 IoC（控制反转）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#IoC使用案例"><span class="toc-number">2.1.1.</span> <span class="toc-text">IoC使用案例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-DI（依赖注入）"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 DI（依赖注入）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#DI使用案例"><span class="toc-number">2.2.1.</span> <span class="toc-text">DI使用案例</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-bean定义"><span class="toc-number">3.</span> <span class="toc-text">3.bean定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-bean的实例化方式"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 bean的实例化方式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-1-默认构造"><span class="toc-number">3.1.1.</span> <span class="toc-text">3.1.1 默认构造</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-2-静态工厂"><span class="toc-number">3.1.2.</span> <span class="toc-text">3.1.2 静态工厂</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#静态工厂使用案例"><span class="toc-number">3.1.3.</span> <span class="toc-text">静态工厂使用案例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-3-实例工厂"><span class="toc-number">3.1.4.</span> <span class="toc-text">3.1.3 实例工厂</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#实例工厂使用案例"><span class="toc-number">3.1.5.</span> <span class="toc-text">实例工厂使用案例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-bean的种类"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 bean的种类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-bean的作用域"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 bean的作用域</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-1-singleton-作用域"><span class="toc-number">3.3.1.</span> <span class="toc-text">3.3.1 singleton 作用域</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-2-prototype-作用域"><span class="toc-number">3.3.2.</span> <span class="toc-text">3.3.2 prototype 作用域</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-bean生命周期"><span class="toc-number">3.4.</span> <span class="toc-text">3.4 bean生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-1-初始化和销毁"><span class="toc-number">3.4.1.</span> <span class="toc-text">3.4.1 初始化和销毁</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-2-bean后置处理器（BeanPostProcessor）"><span class="toc-number">3.4.2.</span> <span class="toc-text">3.4.2 bean后置处理器（BeanPostProcessor）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-属性依赖注入"><span class="toc-number">4.</span> <span class="toc-text">4.属性依赖注入</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-基于构造函数注入"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 基于构造函数注入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-设置值注入（setter注入）"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 设置值注入（setter注入）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3集合注入"><span class="toc-number">4.3.</span> <span class="toc-text">4.3集合注入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-基于注解的配置"><span class="toc-number">4.4.</span> <span class="toc-text">4.4 基于注解的配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-总结"><span class="toc-number">5.</span> <span class="toc-text">5.总结</span></a></li></ol>
                     </div>
                 </span>
             </div>
