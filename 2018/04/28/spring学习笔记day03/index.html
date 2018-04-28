@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://blog.weiyingbin.cn">
   <title>Spring学习笔记Day03——spring事务管理 | 魏迎宾的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Spring学习笔记Day03——spring事务管理1.什么是事务？事务：一组业务操作ABCD，要么全部成功，要么全部不成功。 特性：ACID  A（atomicity）原子性：整体 C（consistency）一致性：完成。事务执行前后涉及到的相关数据保持一致 I（isolation）隔离性：并发。事务正确提交之前结果不应被其他事务所见 D（durability）持久性：结果。执行结果得到持久">
+  <meta name="description" content="Spring学习笔记Day03——spring事务管理1.什么是事务？事务：一组业务操作ABCD，要么全部成功，要么全部不成功。 特性：ACID">
 <meta name="keywords" content="Java,IT,软件开发,工程师,后端开发,Android,Web前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Spring学习笔记Day03——spring事务管理">
 <meta property="og:url" content="http://blog.weiyingbin.cn/2018/04/28/spring学习笔记day03/index.html">
 <meta property="og:site_name" content="魏迎宾的博客">
-<meta property="og:description" content="Spring学习笔记Day03——spring事务管理1.什么是事务？事务：一组业务操作ABCD，要么全部成功，要么全部不成功。 特性：ACID  A（atomicity）原子性：整体 C（consistency）一致性：完成。事务执行前后涉及到的相关数据保持一致 I（isolation）隔离性：并发。事务正确提交之前结果不应被其他事务所见 D（durability）持久性：结果。执行结果得到持久">
+<meta property="og:description" content="Spring学习笔记Day03——spring事务管理1.什么是事务？事务：一组业务操作ABCD，要么全部成功，要么全部不成功。 特性：ACID">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-28T05:01:07.893Z">
+<meta property="og:updated_time" content="2018-04-28T05:04:16.752Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring学习笔记Day03——spring事务管理">
-<meta name="twitter:description" content="Spring学习笔记Day03——spring事务管理1.什么是事务？事务：一组业务操作ABCD，要么全部成功，要么全部不成功。 特性：ACID  A（atomicity）原子性：整体 C（consistency）一致性：完成。事务执行前后涉及到的相关数据保持一致 I（isolation）隔离性：并发。事务正确提交之前结果不应被其他事务所见 D（durability）持久性：结果。执行结果得到持久">
+<meta name="twitter:description" content="Spring学习笔记Day03——spring事务管理1.什么是事务？事务：一组业务操作ABCD，要么全部成功，要么全部不成功。 特性：ACID">
   
     <link rel="alternative" href="/atom.xml" title="魏迎宾的博客" type="application/atom+xml">
   
@@ -180,7 +180,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Spring学习笔记Day03——spring事务管理"><a href="#Spring学习笔记Day03——spring事务管理" class="headerlink" title="Spring学习笔记Day03——spring事务管理"></a>Spring学习笔记Day03——spring事务管理</h1><h2 id="1-什么是事务？"><a href="#1-什么是事务？" class="headerlink" title="1.什么是事务？"></a>1.什么是事务？</h2><p>事务：一组业务操作ABCD，要么全部成功，要么全部不成功。</p>
-<p>特性：ACID</p>
+<p>特性：ACID<br><a id="more"></a></p>
 <ul>
 <li>A（atomicity）原子性：整体</li>
 <li>C（consistency）一致性：完成。事务执行前后涉及到的相关数据保持一致</li>
