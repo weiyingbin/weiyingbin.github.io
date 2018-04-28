@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blog.weiyingbin.cn">
-  <title>Archives: 2018 | 魏迎宾的博客</title>
+  <title>Spring学习笔记Day03——spring事务管理 | 魏迎宾的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="就读于云南大学滇池学院软件工程专业，2018年7月毕业。对IT行业有着极大的兴趣，现阶段主要学习JavaEE和Android开发。业余爱好有Python，区块链，大数据，机器学习...">
+  <meta name="description" content="Spring学习笔记Day03——spring事务管理1.什么是事务？事务：一组业务操作ABCD，要么全部成功，要么全部不成功。 特性：ACID  A（atomicity）原子性：整体 C（consistency）一致性：完成。事务执行前后涉及到的相关数据保持一致 I（isolation）隔离性：并发。事务正确提交之前结果不应被其他事务所见 D（durability）持久性：结果。执行结果得到持久">
 <meta name="keywords" content="Java,IT,软件开发,工程师,后端开发,Android,Web前端">
-<meta property="og:type" content="website">
-<meta property="og:title" content="魏迎宾的博客">
-<meta property="og:url" content="http://blog.weiyingbin.cn/archives/2018/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring学习笔记Day03——spring事务管理">
+<meta property="og:url" content="http://blog.weiyingbin.cn/2018/04/28/spring学习笔记day03/index.html">
 <meta property="og:site_name" content="魏迎宾的博客">
-<meta property="og:description" content="就读于云南大学滇池学院软件工程专业，2018年7月毕业。对IT行业有着极大的兴趣，现阶段主要学习JavaEE和Android开发。业余爱好有Python，区块链，大数据，机器学习...">
+<meta property="og:description" content="Spring学习笔记Day03——spring事务管理1.什么是事务？事务：一组业务操作ABCD，要么全部成功，要么全部不成功。 特性：ACID  A（atomicity）原子性：整体 C（consistency）一致性：完成。事务执行前后涉及到的相关数据保持一致 I（isolation）隔离性：并发。事务正确提交之前结果不应被其他事务所见 D（durability）持久性：结果。执行结果得到持久">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-04-28T05:01:07.893Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="魏迎宾的博客">
-<meta name="twitter:description" content="就读于云南大学滇池学院软件工程专业，2018年7月毕业。对IT行业有着极大的兴趣，现阶段主要学习JavaEE和Android开发。业余爱好有Python，区块链，大数据，机器学习...">
+<meta name="twitter:title" content="Spring学习笔记Day03——spring事务管理">
+<meta name="twitter:description" content="Spring学习笔记Day03——spring事务管理1.什么是事务？事务：一组业务操作ABCD，要么全部成功，要么全部不成功。 特性：ACID  A（atomicity）原子性：整体 C（consistency）一致性：完成。事务执行前后涉及到的相关数据保持一致 I（isolation）隔离性：并发。事务正确提交之前结果不应被其他事务所见 D（durability）持久性：结果。执行结果得到持久">
   
     <link rel="alternative" href="/atom.xml" title="魏迎宾的博客" type="application/atom+xml">
   
@@ -158,130 +159,493 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-spring学习笔记day03" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Spring学习笔记Day03——spring事务管理
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/28/spring学习笔记day03/" class="archive-article-date">
+
+        
+        <a href="/2018/04/28/spring学习笔记day03/" class="archive-article-date">
   	<time datetime="2018-04-28T05:01:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-28</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/28/spring学习笔记day03/">Spring学习笔记Day03——spring事务管理</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Spring学习笔记Day03——spring事务管理"><a href="#Spring学习笔记Day03——spring事务管理" class="headerlink" title="Spring学习笔记Day03——spring事务管理"></a>Spring学习笔记Day03——spring事务管理</h1><h2 id="1-什么是事务？"><a href="#1-什么是事务？" class="headerlink" title="1.什么是事务？"></a>1.什么是事务？</h2><p>事务：一组业务操作ABCD，要么全部成功，要么全部不成功。</p>
+<p>特性：ACID</p>
+<ul>
+<li>A（atomicity）原子性：整体</li>
+<li>C（consistency）一致性：完成。事务执行前后涉及到的相关数据保持一致</li>
+<li>I（isolation）隔离性：并发。事务正确提交之前结果不应被其他事务所见</li>
+<li>D（durability）持久性：结果。执行结果得到持久保存</li>
+</ul>
+<p>隔离问题：</p>
+<ul>
+<li>脏读：一个事务读到另一个事务没有提交的数据</li>
+<li>不可重复读：一个事务读到另一个事务已提交的数据（update）</li>
+<li>虚读(幻读)：一个事务读到另一个事务已提交的数据（insert）</li>
+</ul>
+<p>隔离级别：</p>
+<ul>
+<li>read uncommitted：读未提交。存在3个问题</li>
+<li>read committed：读已提交。解决脏读，存在2个问题</li>
+<li>repeatable read：可重复读。解决：脏读、不可重复读，存在1个问题。</li>
+<li>serializable ：串行化。都解决，单事务。<h2 id="2-spring事务管理框架"><a href="#2-spring事务管理框架" class="headerlink" title="2.spring事务管理框架"></a>2.spring事务管理框架</h2></li>
+</ul>
+<p>Spring事务管理框架对JDBC、JTA事务处理进行了更高一层抽象，向开发人员提供了统一的开发接口，面对本地事务和全局事务使用一种编程模型，从而大大降低了开发的复杂度。</p>
+<h3 id="2-1-jar包"><a href="#2-1-jar包" class="headerlink" title="2.1 jar包"></a>2.1 jar包</h3><p>spring-tx-4.3.15.RELEASE.jar</p>
+<h3 id="2-2-三个顶级接口"><a href="#2-2-三个顶级接口" class="headerlink" title="2.2 三个顶级接口"></a>2.2 三个顶级接口</h3><ul>
+<li>PlatformTransactionManager：平台事务管理器，spring要管理事务，必须使用事务管理器进行事务配置时，必须配置事务管理器。</li>
+<li>TransactionDefinition：事务详情（事务定义、事务属性），spring用于确定事务具体详情，例如：隔离级别、是否只读、超时时间 等<br>进行事务配置时，必须配置详情。spring将配置项封装到该对象实例。</li>
+<li>TransactionStatus：事务状态，spring用于记录当前事务运行状态例如：是否有保存点，事务是否完成。<br>spring底层根据状态进行相应操作。</li>
+</ul>
+<h4 id="2-2-1-PlatformTransactionManager-事务管理器"><a href="#2-2-1-PlatformTransactionManager-事务管理器" class="headerlink" title="2.2.1 PlatformTransactionManager 事务管理器"></a>2.2.1 PlatformTransactionManager 事务管理器</h4><ul>
+<li>常见的事务管理器<ul>
+<li>DataSourceTransactionManager，jdbc开发时事务管理器，采用JdbcTemplate</li>
+<li>HibernateTransactionManager，hibernate开发时事务管理器，整合hibernate<h4 id="2-2-2-TransactionStatus"><a href="#2-2-2-TransactionStatus" class="headerlink" title="2.2.2 TransactionStatus"></a>2.2.2 TransactionStatus</h4></li>
+</ul>
+</li>
+</ul>
+<p>TransactionStatus接口中有以下几种方法</p>
+<ul>
+<li>isNewTransactionStatus()返回boolean类型，判断是否为新的事务</li>
+<li>hasSavepoint()返回boolean类型，判断是否有保存点</li>
+<li>setRollbackOnly()返回值void，设置回滚</li>
+<li>isRollbackOnly()返回boolean类型，是否回滚</li>
+<li>flush(),返回void，刷新</li>
+<li>isCompleted(),返回boolean，判断是否完成</li>
+</ul>
+<h4 id="2-2-3-TransactionDefinition"><a href="#2-2-3-TransactionDefinition" class="headerlink" title="2.2.3 TransactionDefinition"></a>2.2.3 TransactionDefinition</h4><p>传播行为：在两个业务之间如何共享事务。</p>
+<ul>
+<li>PROPAGATION_REQUIRED , required , 必须  【默认值】<ul>
+<li>支持当前事务，A如果有事务，B将使用该事务。</li>
+<li>如果A没有事务，B将创建一个新的事务。</li>
+</ul>
+</li>
+<li>PROPAGATION_SUPPORTS ，supports ，支持<ul>
+<li>支持当前事务，A如果有事务，B将使用该事务。</li>
+<li>如果A没有事务，B将以非事务执行。</li>
+</ul>
+</li>
+<li>PROPAGATION_MANDATORY，mandatory ，强制<ul>
+<li>支持当前事务，A如果有事务，B将使用该事务。</li>
+<li>如果A没有事务，B将抛异常。</li>
+</ul>
+</li>
+<li>PROPAGATION_REQUIRES_NEW ， requires_new ，必须新的<ul>
+<li>如果A有事务，将A的事务挂起，B创建一个新的事务</li>
+<li>如果A没有事务，B创建一个新的事务</li>
+</ul>
+</li>
+<li>PROPAGATION_NOT_SUPPORTED ，not_supported ,不支持<ul>
+<li>如果A有事务，将A的事务挂起，B将以非事务执行</li>
+<li>如果A没有事务，B将以非事务执行</li>
+</ul>
+</li>
+<li>PROPAGATION_NEVER ，never，从不<ul>
+<li>如果A有事务，B将抛异常</li>
+<li>如果A没有事务，B将以非事务执行</li>
+</ul>
+</li>
+<li>PROPAGATION_NESTED ，nested ，嵌套<ul>
+<li>A和B底层采用保存点机制，形成嵌套事务。</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-案例：转账"><a href="#3-案例：转账" class="headerlink" title="3.案例：转账"></a>3.案例：转账</h2><h3 id="3-1-环境搭建"><a href="#3-1-环境搭建" class="headerlink" title="3.1 环境搭建"></a>3.1 环境搭建</h3><h4 id="3-1-1-导入jar包"><a href="#3-1-1-导入jar包" class="headerlink" title="3.1.1 导入jar包"></a>3.1.1 导入jar包</h4><p>aspectjrt-1.6.8.jar</p>
+<p>com.springsource.com.mchange.v2.c3p0-0.9.1.2.jar</p>
+<p>com.springsource.org.aopalliance-1.0.0.jar</p>
+<p>com.springsource.org.apache.commons.logging-1.1.1.jar</p>
+<p>com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar</p>
+<p>mysql-connector-java-5.1.21.jar</p>
+<p>spring-aop-4.3.15.RELEASE.jar</p>
+<p>spring-aspects-4.3.15.RELEASE.jar</p>
+<p>spring-beans-4.3.15.RELEASE.jar</p>
+<p>spring-context-4.3.15.RELEASE.jar</p>
+<p>spring-core-4.3.15.RELEASE.jar</p>
+<p>spring-expression-4.3.15.RELEASE.jar</p>
+<p>spring-jdbc-4.3.15.RELEASE.jar</p>
+<p>spring-tx-4.3.15.RELEASE.jar</p>
+<h4 id="3-1-2-创建表"><a href="#3-1-2-创建表" class="headerlink" title="3.1.2 创建表"></a>3.1.2 创建表</h4><pre><code>CREATE TABLE account (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR (50),
+    money INT (10)
+);
 
-        <div class="article-info info-on-right">
-          
-          
+INSERT INTO account (username, money)
+VALUES
+    (&apos;Jack&apos;, 10000);
 
+INSERT INTO account (username, money)
+VALUES
+    (&apos;Luna&apos;, 20000);
+</code></pre><h4 id="3-1-3-编写dao层"><a href="#3-1-3-编写dao层" class="headerlink" title="3.1.3 编写dao层"></a>3.1.3 编写dao层</h4><p>dao接口IAccountDao</p>
+<pre><code>public interface IAccountDao {
+    void out(String outer, Integer money);
+
+    void in(String inner, Integer money);
+}
+</code></pre><p>dao实现类AccountDaoImpl</p>
+<pre><code>public class AccountDaoImpl extends JdbcDaoSupport implements IAccountDao {
+
+    @Override
+    public void out(String outer, Integer money) {
+        // TODO Auto-generated method stub
+        this.getJdbcTemplate().update(&quot;update account set money = money - ? where username = ?&quot;, money, outer);
+    }
+
+    @Override
+    public void in(String inner, Integer money) {
+        // TODO Auto-generated method stub
+        this.getJdbcTemplate().update(&quot;update account set money = money + ? where username = ?&quot;, money, inner);
+    }
+
+}
+</code></pre><h4 id="3-1-4-编写service层"><a href="#3-1-4-编写service层" class="headerlink" title="3.1.4 编写service层"></a>3.1.4 编写service层</h4><p>service接口IAccountService</p>
+<pre><code>public interface IAccountService {
+    void transfer(String outer, String inner, Integer money);
+}
+</code></pre><p>service实现类AccountServiceImpl</p>
+<pre><code>public class AccountServiceImpl implements IAccountService {
+    private IAccountDao accountDao;
+
+    public void setAccountDao(IAccountDao accountDao) {
+        this.accountDao = accountDao;
+    }
+
+    @Override
+    public void transfer(String outer, String inner, Integer money) {
+        // TODO Auto-generated method stub
+        accountDao.out(outer, money);
+        accountDao.in(inner, money);
+    }
+
+}
+</code></pre><h4 id="3-1-5-编写spring配置文件"><a href="#3-1-5-编写spring配置文件" class="headerlink" title="3.1.5 编写spring配置文件"></a>3.1.5 编写spring配置文件</h4><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:context=&quot;http://www.springframework.org/schema/context&quot;
+    xmlns:aop=&quot;http://www.springframework.org/schema/aop&quot;
+    xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans 
+                              http://www.springframework.org/schema/beans/spring-beans.xsd
+                              http://www.springframework.org/schema/aop 
+                              http://www.springframework.org/schema/aop/spring-aop.xsd
+                              http://www.springframework.org/schema/context 
+                              http://www.springframework.org/schema/context/spring-context.xsd&quot;&gt;
+    &lt;!-- 创建c3p0数据源 --&gt;
+    &lt;bean id=&quot;dataSource&quot; class=&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;&gt;
+        &lt;property name=&quot;driverClass&quot; value=&quot;com.mysql.jdbc.Driver&quot;&gt;&lt;/property&gt;
+        &lt;property name=&quot;jdbcUrl&quot; value=&quot;jdbc:mysql://localhost:3306/test&quot;&gt;&lt;/property&gt;
+        &lt;property name=&quot;user&quot; value=&quot;root&quot;&gt;&lt;/property&gt;
+        &lt;property name=&quot;password&quot; value=&quot;&quot;&gt;&lt;/property&gt;
+    &lt;/bean&gt;
+    &lt;!-- dao --&gt;
+    &lt;bean id=&quot;accountDao&quot; class=&quot;com.spring.tx.AccountDaoImpl&quot;&gt;
+        &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot;&gt;&lt;/property&gt;
+    &lt;/bean&gt;
+    &lt;!-- service --&gt;
+    &lt;bean id=&quot;accountService&quot; class=&quot;com.spring.tx.AccountServiceImpl&quot;&gt;
+        &lt;property name=&quot;accountDao&quot; ref=&quot;accountDao&quot;&gt;&lt;/property&gt;
+    &lt;/bean&gt;
+&lt;/beans&gt;
+</code></pre><h4 id="3-1-6-测试"><a href="#3-1-6-测试" class="headerlink" title="3.1.6 测试"></a>3.1.6 测试</h4><pre><code>@Test
+public void test() {
+    String xmlPath = &quot;com/spring/tx/beans.xml&quot;;
+    ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+    IAccountService bean = (IAccountService) applicationContext.getBean(&quot;accountService&quot;);
+    bean.transfer(&quot;Jack&quot;, &quot;Luna&quot;, 123);
+}
+</code></pre><h3 id="3-2-基于xml配置的aop事务管理"><a href="#3-2-基于xml配置的aop事务管理" class="headerlink" title="3.2 基于xml配置的aop事务管理"></a>3.2 基于xml配置的aop事务管理</h3><p>修改spring配置文件</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:context=&quot;http://www.springframework.org/schema/context&quot;
+    xmlns:aop=&quot;http://www.springframework.org/schema/aop&quot; xmlns:tx=&quot;http://www.springframework.org/schema/tx&quot;
+    xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans 
+                              http://www.springframework.org/schema/beans/spring-beans.xsd
+                              http://www.springframework.org/schema/aop 
+                              http://www.springframework.org/schema/aop/spring-aop.xsd
+                              http://www.springframework.org/schema/context 
+                              http://www.springframework.org/schema/context/spring-context.xsd
+                              http://www.springframework.org/schema/tx
+                              http://www.springframework.org/schema/tx/spring-tx.xsd&quot;&gt;
+    &lt;!-- 创建c3p0数据源 --&gt;
+    &lt;bean id=&quot;dataSource&quot; class=&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;&gt;
+        &lt;property name=&quot;driverClass&quot; value=&quot;com.mysql.jdbc.Driver&quot;&gt;&lt;/property&gt;
+        &lt;property name=&quot;jdbcUrl&quot; value=&quot;jdbc:mysql://localhost:3306/test&quot;&gt;&lt;/property&gt;
+        &lt;property name=&quot;user&quot; value=&quot;root&quot;&gt;&lt;/property&gt;
+        &lt;property name=&quot;password&quot; value=&quot;&quot;&gt;&lt;/property&gt;
+    &lt;/bean&gt;
+    &lt;!-- dao --&gt;
+    &lt;bean id=&quot;accountDao&quot; class=&quot;com.spring.tx.AccountDaoImpl&quot;&gt;
+        &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot;&gt;&lt;/property&gt;
+    &lt;/bean&gt;
+    &lt;!-- service --&gt;
+    &lt;bean id=&quot;accountService&quot; class=&quot;com.spring.tx.AccountServiceImpl&quot;&gt;
+        &lt;property name=&quot;accountDao&quot; ref=&quot;accountDao&quot;&gt;&lt;/property&gt;
+    &lt;/bean&gt;
+    &lt;!-- 事务管理器 --&gt;
+    &lt;bean id=&quot;txManager&quot;
+        class=&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;&gt;
+        &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot;&gt;&lt;/property&gt;
+    &lt;/bean&gt;
+    &lt;!-- 事务详情（事务通知），在aop筛选基础上，对ABC三个确定使用什么样的事务。例如：AC读写、B只读 等 &lt;tx:attributes&gt; 
+        用于配置事务详情（属性属性） &lt;tx:method name=&quot;&quot;/&gt; 详情具体配置 propagation 传播行为 ， REQUIRED：必须；REQUIRES_NEW:必须是新的 
+        isolation 隔离级别 --&gt;
+    &lt;tx:advice id=&quot;txAdvice&quot; transaction-manager=&quot;txManager&quot;&gt;
+        &lt;tx:attributes&gt;
+            &lt;tx:method name=&quot;transfer&quot; propagation=&quot;REQUIRED&quot;
+                isolation=&quot;DEFAULT&quot; /&gt;
+        &lt;/tx:attributes&gt;
+    &lt;/tx:advice&gt;
+    &lt;!-- 4.3 AOP编程，目标类有ABCD（4个连接点），切入点表达式 确定增强的连接器，从而获得切入点：ABC --&gt;
+    &lt;aop:config&gt;
+        &lt;aop:advisor advice-ref=&quot;txAdvice&quot;
+            pointcut=&quot;execution(* com.spring.tx.*.*(..))&quot; /&gt;
+    &lt;/aop:config&gt;
+&lt;/beans&gt;
+</code></pre><h3 id="3-3-基于注解的aop事务管理"><a href="#3-3-基于注解的aop事务管理" class="headerlink" title="3.3 基于注解的aop事务管理"></a>3.3 基于注解的aop事务管理</h3><h4 id="3-3-1-修改spring配置文件"><a href="#3-3-1-修改spring配置文件" class="headerlink" title="3.3.1 修改spring配置文件"></a>3.3.1 修改spring配置文件</h4><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:context=&quot;http://www.springframework.org/schema/context&quot;
+    xmlns:aop=&quot;http://www.springframework.org/schema/aop&quot; xmlns:tx=&quot;http://www.springframework.org/schema/tx&quot;
+    xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans 
+                              http://www.springframework.org/schema/beans/spring-beans.xsd
+                              http://www.springframework.org/schema/aop 
+                              http://www.springframework.org/schema/aop/spring-aop.xsd
+                              http://www.springframework.org/schema/context 
+                              http://www.springframework.org/schema/context/spring-context.xsd
+                              http://www.springframework.org/schema/tx
+                              http://www.springframework.org/schema/tx/spring-tx.xsd&quot;&gt;
+    &lt;!-- 创建c3p0数据源 --&gt;
+    &lt;bean id=&quot;dataSource&quot; class=&quot;com.mchange.v2.c3p0.ComboPooledDataSource&quot;&gt;
+        &lt;property name=&quot;driverClass&quot; value=&quot;com.mysql.jdbc.Driver&quot;&gt;&lt;/property&gt;
+        &lt;property name=&quot;jdbcUrl&quot; value=&quot;jdbc:mysql://localhost:3306/test&quot;&gt;&lt;/property&gt;
+        &lt;property name=&quot;user&quot; value=&quot;root&quot;&gt;&lt;/property&gt;
+        &lt;property name=&quot;password&quot; value=&quot;&quot;&gt;&lt;/property&gt;
+    &lt;/bean&gt;
+    &lt;!-- dao --&gt;
+    &lt;bean id=&quot;accountDao&quot; class=&quot;com.spring.tx.AccountDaoImpl&quot;&gt;
+        &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot;&gt;&lt;/property&gt;
+    &lt;/bean&gt;
+    &lt;!-- service --&gt;
+    &lt;bean id=&quot;accountService&quot; class=&quot;com.spring.tx.AccountServiceImpl&quot;&gt;
+        &lt;property name=&quot;accountDao&quot; ref=&quot;accountDao&quot;&gt;&lt;/property&gt;
+    &lt;/bean&gt;
+    &lt;!-- 事务管理器 --&gt;
+    &lt;bean id=&quot;txManager&quot;
+        class=&quot;org.springframework.jdbc.datasource.DataSourceTransactionManager&quot;&gt;
+        &lt;property name=&quot;dataSource&quot; ref=&quot;dataSource&quot;&gt;&lt;/property&gt;
+    &lt;/bean&gt;
+    &lt;!-- 将管理器交予spring * transaction-manager 配置事务管理器 * proxy-target-class true:底层强制使用cglib 
+        代理 --&gt;
+    &lt;tx:annotation-driven transaction-manager=&quot;txManager&quot; /&gt;
+&lt;/beans&gt;
+</code></pre><p>测试</p>
+<pre><code>@Test
+public void test() {
+    String xmlPath = &quot;com/spring/tx/beans.xml&quot;;
+    ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+    IAccountService bean = (IAccountService) applicationContext.getBean(&quot;accountService&quot;);
+    bean.transfer(&quot;Jack&quot;, &quot;Luna&quot;, 1000);
+}
+</code></pre><h4 id="3-3-2-在service实现类上添加-Transactional"><a href="#3-3-2-在service实现类上添加-Transactional" class="headerlink" title="3.3.2 在service实现类上添加@Transactional"></a>3.3.2 在service实现类上添加@Transactional</h4><pre><code>@Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT)
+public class AccountServiceImpl implements IAccountService {
+    private IAccountDao accountDao;
+
+    public void setAccountDao(IAccountDao accountDao) {
+        this.accountDao = accountDao;
+    }
+
+    @Override
+    public void transfer(String outer, String inner, Integer money) {
+        // TODO Auto-generated method stub
+        accountDao.out(outer, money);
+        accountDao.in(inner, money);
+    }
+
+}
+</code></pre><p>测试</p>
+<pre><code>@Test
+public void test() {
+    String xmlPath = &quot;com/spring/tx/beans.xml&quot;;
+    ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+    IAccountService bean = (IAccountService) applicationContext.getBean(&quot;accountService&quot;);
+    bean.transfer(&quot;Jack&quot;, &quot;Luna&quot;, 1000);
+}
+</code></pre>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://blog.weiyingbin.cn/2018/04/28/spring学习笔记day03/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/26/spring学习笔记day02/" class="archive-article-date">
-  	<time datetime="2018-04-26T05:16:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-26</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/04/26/spring学习笔记day02/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Spring学习笔记Day02——AOP</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/26/spring学习笔记day02/">Spring学习笔记Day02——AOP</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Spring学习笔记Day03——spring事务管理"><span class="toc-number">1.</span> <span class="toc-text">Spring学习笔记Day03——spring事务管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-什么是事务？"><span class="toc-number">1.1.</span> <span class="toc-text">1.什么是事务？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-spring事务管理框架"><span class="toc-number">1.2.</span> <span class="toc-text">2.spring事务管理框架</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-jar包"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 jar包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-三个顶级接口"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 三个顶级接口</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1-PlatformTransactionManager-事务管理器"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">2.2.1 PlatformTransactionManager 事务管理器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-TransactionStatus"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">2.2.2 TransactionStatus</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-3-TransactionDefinition"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">2.2.3 TransactionDefinition</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-案例：转账"><span class="toc-number">1.3.</span> <span class="toc-text">3.案例：转账</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-环境搭建"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-1-导入jar包"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">3.1.1 导入jar包</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-2-创建表"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">3.1.2 创建表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-3-编写dao层"><span class="toc-number">1.3.1.3.</span> <span class="toc-text">3.1.3 编写dao层</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-4-编写service层"><span class="toc-number">1.3.1.4.</span> <span class="toc-text">3.1.4 编写service层</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-5-编写spring配置文件"><span class="toc-number">1.3.1.5.</span> <span class="toc-text">3.1.5 编写spring配置文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-6-测试"><span class="toc-number">1.3.1.6.</span> <span class="toc-text">3.1.6 测试</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-基于xml配置的aop事务管理"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 基于xml配置的aop事务管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-基于注解的aop事务管理"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.3 基于注解的aop事务管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-1-修改spring配置文件"><span class="toc-number">1.3.3.1.</span> <span class="toc-text">3.3.1 修改spring配置文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-2-在service实现类上添加-Transactional"><span class="toc-number">1.3.3.2.</span> <span class="toc-text">3.3.2 在service实现类上添加@Transactional</span></a></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/23/Oracle数据库安装及基本语法/" class="archive-article-date">
-  	<time datetime="2018-04-23T11:06:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-23</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/23/Oracle数据库安装及基本语法/">Oracle数据库安装及基本语法</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/23/spring学习笔记day01/" class="archive-article-date">
-  	<time datetime="2018-04-23T08:13:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/23/spring学习笔记day01/">Spring学习笔记Day01</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://blog.weiyingbin.cn/2018/04/28/spring学习笔记day03/",
+  owner: 'weiyingbin',
+  repo: 'gitment-comments',
+  oauth: {
+    client_id: 'be2e4b08a7a3cb274e30',
+    client_secret: 'ae21ab4a3a33e845b98a58c07549d62d5c18cc80',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -304,8 +668,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
